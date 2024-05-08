@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root{
+   --main-color:#212121;
+   --sub-color:#D6BD9A;
+   --white:#fff;
+   --border:.1rem solid rgba(82, 82, 82, 0.3);
+}
+
+*{
+   font-family: 'Montserrat', sans-serif;
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+}
+
+
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+   background-color: var(--main-color);
+   /* padding-bottom: 7.5rem; */
+}
+
+section{
+   padding: 3rem 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.btn{
+   display: inline-block;
+   cursor: pointer;
+   padding: 1rem 3rem;
+   border: var(--border);
+   font-size: 1.8rem;
+   color: var(--sub-color);
+   text-align: center;
+   text-transform: capitalize;
+   transition: .2s linear;
+   margin-top: 1rem;
+   background-color: var(--main-color);
+}
+
+
+.header{
+   padding-bottom: 0;
+}
+
+
+/*title*/
+.header .flex .logo{
+   color: var(--sub-color);
+   font-size: 2.5rem;
+   margin-top:2rem;
+}
+
+.header .flex {
+   display: flex;
+}
+
+
+.header .navbar{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   gap: 1.5rem;
+   margin-top: 2rem;
+   background-color: var(--sub-color);
+   padding: .5rem;
+   border-radius: .5rem;
+}
+
+.header .navbar a{
+   font-size: 1.8rem;
+   color: var(--main-color);
+   padding: 1rem 3rem;
+   border-radius: .5rem;
+}
+
+.header h1 {
+   color: var(--sub-color);
+   margin-top: 3rem;
+   font-size: 2.5rem;
+}
+
+/*aligning images in homepage*/
+.about .row{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   text-align: center;
+   align-items: center;
+}
+
+.about .row .content{
+   flex:1 1 40rem;
+}
+
+/*header for about tab alignment*/
+.about .row .content h3{
+   font-size: 3rem;
+   color: var(--sub-color);
+   text-transform: capitalize;
+   margin-bottom: 1rem;
+}
+
+.about .row .content p{
+   line-height: 2;
+   padding: 1rem 0;
+   font-size: 1.7rem;
+   color: var(--sub-color);
+}
+
+.about .row.revers{
+   flex-flow: row-reverse;
+   margin: 3rem 0;
+   flex-wrap: wrap;
+}
+
+.services .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+   gap: 1.5rem;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.services .box-container .box{
+   padding: 2rem;
+   text-align: center;
+}
+
+.services .box-container .box img{
+   height: 7rem;
+   margin-bottom: 1rem;
+}
+
+.services .box-container .box h3{
+   font-size: 2rem;
+   color: var(--sub-color);
+   text-transform: capitalize;
+   margin: 1rem 0;
+}
+
+.services .box-container .box p{
+   line-height: 2;
+   font-size: 1.5rem;
+   color:var(--sub-color);
+}
+
+.img-logo {
+   width: 100px;
+   height: 70px;
+   display: flex;
+}
+
+.about .row .content .menu-items h2{
+   font-size: 2rem;
+   color: var(--sub-color);
+   text-transform: capitalize;
+   margin-bottom: 1rem;
+}
+
+.about .row .content .menu-items p{
+   font-size: 1.5rem;
+   color: var(--sub-color);
+   text-align:center;
+   margin-bottom: 0;
+}
+
+.login-home-block {
+   font-size: 3em;
+   color: var(--sub-color);
+   text-align:center;
+   margin-bottom: 0;
+   display: inline-block;
+   align-items: center;
+   justify-content: center;
+   margin-right: 8rem;
+}
+
+.login-home-block {
+   display: flex;
+   flex-direction: column; /* Change to column */
+   align-items: center; /* Optional: Center buttons horizontally */
+   margin: 20px;
+   margin-top: 10rem;
+}
+
+.login-button {
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 1px solid #D6BD9A;
+            color: #D6BD9A;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 7rem;
+}
+
+.login-button:hover {
+            background-color: #D6BD9A;
+            color: white;
+}
+
+.login {
+   display: inline-block;
+   align-items: center;
+   justify-content: center;
+   margin-top:10rem;
+   font-size: 1.5em;
+   color: #212121;
+   /* color: var(--sub-color); */
+   text-transform: capitalize;
+   margin-bottom: 1rem;
+   text-align: center;
+   width: 500px;
+   place-content: center;
+   background-color: var(--sub-color);
+   padding: 20px;
+   border-radius: 4px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.login form {
+   align-items: center;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   place-content: center;
+}
+
+.login input {
+   padding: 4px;
+   margin-bottom: 16px;
+}
+
+.login button {
+   padding: 12px 24px;
+   font-size: 1em;
+   background-color: #212121;
+   color: #D6BD9A;
+}
+
+.reservation form {
+   border: var(--border);
+   padding: 2rem;
+}
+
+   .reservation form .flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+   }
+
+   .reservation form h3 {
+      background-color: var(--sub-color);
+      color: var(--main-color);
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      border-radius: .5rem;
+      padding: 1.2rem;
+      text-align: center;
+      text-transform: capitalize;
+   }
+
+   .reservation form .flex .box {
+      flex: 1 1 40rem;
+   }
+
+   .reservation form .flex .box p {
+      font-size: 1.8rem;
+      color: var(--sub-color);
+   }
+
+   .reservation form .flex .box .input {
+      padding: 1rem 0;
+      margin: 1rem 0;
+      border-bottom: var(--border);
+      background: var(--main-color);
+      color: var(--white);
+      font-size: 1.8rem;
+      width: 100%;
+   }
+
+   .reservation form .flex .box .input::placeholder {
+      color: rgba(220, 198, 156, .6);
+   }
+
+   .reservation form .flex .box input[type="date"]::-webkit-calendar-picker-indicator {
+      filter: invert(1);
+   }
+
+   .header table {
+      margin-top: 3rem;
+      /* margin-left: 12rem; */
+      align-items: center;
+      background-color: var(--sub-color);
+   }
+
+   .header button {
+      background-color: lightgray;
+      color: black;
+      font-size: 12px;
+      padding: 5px 15px;
+   }
+
+   .header button a {
+      color: black;
+   }
+
+   .header td, td {
+      font-size: 1.8rem;
+         border: 1px solid black; /* Set border to 1px solid black */
+         text-align: center;
+         padding: 8px;
+   }
+
+   .last-change {
+      margin-left: auto;
+      margin-right: auto;
+    }

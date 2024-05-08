@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root{
+   --main-color:#212121;
+   --sub-color:#D6BD9A;
+   --white:#fff;
+   --border:.1rem solid rgba(82, 82, 82, 0.3);
+}
+
+*{
+   font-family: 'Montserrat', sans-serif;
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+}
+
+
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+   background-color: var(--main-color);
+   padding-bottom: 7.5rem;
+}
+
+section{
+   padding: 3rem 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.btn{
+   display: inline-block;
+   cursor: pointer;
+   padding: 1rem 3rem;
+   border: var(--border);
+   font-size: 1.8rem;
+   color: var(--sub-color);
+   text-align: center;
+   text-transform: capitalize;
+   transition: .2s linear;
+   margin-top: 1rem;
+   background-color: var(--main-color);
+}
+
+
+.header{
+   padding-bottom: 0;
+}
+
+
+.header .flex .logo{
+   color: var(--sub-color);
+   font-size: 2.5rem;
+   margin-top:2rem;
+}
+
+.header .flex {
+   display: flex;
+}
+
+
+.header .navbar{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   gap: 1.5rem;
+   margin-top: 2rem;
+   background-color: var(--sub-color);
+   padding: .5rem;
+   border-radius: .5rem;
+}
+
+.header .navbar a{
+   font-size: 1.8rem;
+   color: var(--main-color);
+   padding: 1rem 3rem;
+   border-radius: .5rem;
+}
+
+
+.about .row{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   text-align: center;
+   align-items: center;
+}
+
+.about .row .content{
+   flex:1 1 40rem;
+}
+
+.about .row .content h3{
+   font-size: 3rem;
+   color: var(--sub-color);
+   text-transform: capitalize;
+   margin-bottom: 1rem;
+}
+
+.about .row .content p{
+   line-height: 2;
+   padding: 1rem 0;
+   font-size: 1.7rem;
+   color: var(--sub-color);
+}
+
+.about .row.revers{
+   flex-flow: row-reverse;
+   margin: 3rem 0;
+   flex-wrap: wrap;
+}
+
+.services .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+   gap: 1.5rem;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.services .box-container .box{
+   padding: 2rem;
+   text-align: center;
+}
+
+.services .box-container .box img{
+   height: 7rem;
+   margin-bottom: 1rem;
+}
+
+.services .box-container .box h3{
+   font-size: 2rem;
+   color: var(--sub-color);
+   text-transform: capitalize;
+   margin: 1rem 0;
+}
+
+.services .box-container .box p{
+   line-height: 2;
+   font-size: 1.5rem;
+   color:var(--sub-color);
+}
+
+.img-logo {
+   width: 100px;
+   height: 70px;
+   display: flex;
+}
+
+
+.reservation form{
+   border: var(--border);
+   padding: 2rem;
+   margin-top: -12rem;
+}
+
+.reservation form .flex{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+}
+
+.reservation form h3{
+   background-color: var(--sub-color);
+   color: var(--main-color);
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+   padding: 1.2rem;
+   text-align: center;
+   text-transform: capitalize;
+}
+
+
+.reservation form .flex .box{
+   flex: 1 1 40rem;
+}
+
+.reservation form .flex .box p{
+   font-size: 1.8rem;
+   color: var(--sub-color);
+}
+
+.reservation form .flex .box .input{
+   padding: 1rem 0;
+   margin: 1rem 0;
+   border-bottom: var(--border);
+   background: var(--main-color);
+   color: var(--white);
+   font-size: 1.8rem;
+   width: 100%;
+}
+
+.reservation form .flex .box .input::placeholder{
+   color: rgba(220, 198, 156, .6);
+}
+ 
